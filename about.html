@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <title>NIKE IN. | ABOUT US</title>
+        <link rel="shortcut icon" href="S1.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <nav class="nav nav_top">
+            <div class="logo">
+                <a href="SinglePage.html"><img src="F1.png" width="60"></a>
+            </div>
+            <div class="nav_side">
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contact.html">Contacts</a>
+                <a href="signin.html">Sign In/Up</a>
+            </div>
+        </nav>
+
+        <div class="about_us">
+            <h2>About Us.</h2>
+            <div class="about_content">
+                <p>Our mission is what drives us to do everything possible to expand human potential. We do that by creating groundbreaking sport innovations, by making our products more sustainably, by building a creative and diverse global team and by making a positive impact in communities where we live and work.</p>
+                <p>Based in Beaverton, Oregon, NIKE, Inc. includes the Nike, Converse, and Jordan brands.</p>
+                
+            </div>
+
+            <h2>OUR MISSION.<br>
+            BRING INSPIRATION<br>
+               AND INNOVATION<br>
+               TO EVERY ATHLETE*<br>
+               IN THE WORLD</h2>
+               <p>*IF YOU HAVE A BODY, YOU ARE AN ATHLETE.<br></p>
+        </div>
+
+        <div class="feed">
+            <h2>REVIEW US.</h2>
+            <div class="feed_form">
+                <form name="submit-googlesheet" method="post">
+                    <input type="text" name="Name" placeholder="Name"><br>
+                    <input type="email" name="Email" placeholder="Email ID"><br>
+                    <input type="number" name="Number" placeholder="Contact Number"><br>
+                    <textarea rows="5" cols="7" name="Review" placeholder="Write Your Review"></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_logo">
+                <a href="SinglePage.html"><img src="F1.png" width="80"></a>
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="signin.html">Sign Up</a>
+            </div>
+            <div class="doc">
+                <h3>Documents</h3>
+                <a href="https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacyPolicy&uxId=com.nike.commerce.nikedotcom.web&country=US&language=en&requestType=redirect#who">Pivacy Policy</a>
+                <a href="https://agreementservice.svs.nike.com/us/en_us/rest/agreement?agreementType=termsOfUse&uxId=com.nike.commerce.nikedotcom.web&country=US&language=en&requestType=redirect">Terms Of Use</a>
+                <a href="refund.html">Refund Policy</a>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/nike/" target="_blank"><img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" width="30px"></a>
+                <a href="https://www.instagram.com/nike/?hl=en" target="_blank"><img src="https://www.freepnglogos.com/uploads/new-instagram-logo-png-1.png" width="30px"></a>
+                <a href="https://mobile.twitter.com/nike?lang=en" target="_blank"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" width="30px"></a>
+                <a href="https://www.linkedin.com/company/nike" target="_blank"><img src="https://www.freepnglogos.com/uploads/linkedin-logo-black-png-image-21.png" width="30px"></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://api.Whatsapp.com/send?phone=+919876543210" target="_blank"><img src="https://www.freepnglogos.com/uploads/whatsapp-logo-png-hd-2.png" width="30px"></a>
+                <a href="tel: +919876543210"><img src="https://www.freepnglogos.com/uploads/logo-telepon-png/phone-icon-24.png" width="27px"></a>
+                <a href="mailto: support@nike.com"><img src="https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-circle-email-gmail-logo-mail-material-icon-21.png" width="30px"></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; 2022 Nike IN. All Rights Reserved.</p>
+        </footer>
+
+
+     <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxACl3z4SG3d6aR3yi_hYSW01oVdFTXLnUBj1CN2iskdW-JE4Te9EYLWNJVfnkgV3fY/exec'
+    const form = document.forms['submit-googlesheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("GRATEFUL FOR UR REVIEW. TEAM NIKE WILL GET BACK SOON"))
+        .catch(error => console.error('Uh-oh, Something Wrong!!', error.message))
+    })
+    </script>
+</body>
+</html>
